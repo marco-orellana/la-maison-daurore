@@ -1,0 +1,47 @@
+{
+    "title": "Compte Administrateur",
+    "sex": {
+        "label": "Titre",
+        "labelError": "Selectionner un titre",
+        "options": [
+            {
+                "value": "female",
+                "label": "Mrs"
+            },
+            {
+                "value": "male",
+                "label": "Mr"
+            }
+        ]
+    },
+    "lastName": {
+        "label": "Nom",
+        "labelError": "Obligatoire"
+    },
+    "firstName": {
+        "label": "Prénom",
+        "labelError": "Obligatoire"
+    },
+    "contactPersonal": {
+        "label": "Numero personnel"
+    },
+    "contactWork": {
+        "label": "Numero de travail"
+    },
+    "email": {
+        "label": "Adresse email",
+        "labelError": "Adresse email invalide"
+    },
+    "password": {
+        "label": "Mot de passe",
+        "labelError": "Mot de passes différents ou invalide"
+    },
+    "confirmPassword": {
+        "label": "Confirmer le mot de passe",
+        "labelError": "Mot de passes différents ou invalide"
+    },
+    "validation": {
+        "label": "Validité du compte"
+    },
+    "buttonLabel": "Enregistrer"
+}

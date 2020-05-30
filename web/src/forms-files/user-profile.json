@@ -1,0 +1,57 @@
+{
+    "update": [
+        {
+            "name": "last_name",
+            "type": "textField",
+            "required": false
+        },
+        {
+            "name": "first_name",
+            "type": "textField",
+            "required": false
+        },
+        {
+            "name": "personal",
+            "type": "phoneField",
+            "required": false
+        },
+        {
+            "name": "work",
+            "type": "phoneField",
+            "required": false
+        },
+        {
+            "name": "home",
+            "type": "phoneField",
+            "required": false
+        },
+        {
+            "name": "emergency",
+            "type": "phoneField",
+            "required": false
+        },
+        {
+            "name": "email",
+            "type": "textField",
+            "required": true
+        },
+        {
+            "name": "oldPassword",
+            "type": "textField",
+            "otherType": "password",
+            "required": false
+        },
+        {
+            "name": "newPassword",
+            "type": "textField",
+            "otherType": "password",
+            "required": false
+        },
+        {
+            "name": "newConfirmPassword",
+            "type": "textField",
+            "otherType": "password",
+            "required": false
+        }
+    ]
+}

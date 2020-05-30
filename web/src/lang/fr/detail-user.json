@@ -1,0 +1,17 @@
+{
+    "homeTitle": "LA MAISON D'AURORE",
+    "modalTitle1": "Fiche d'Informations ",
+    "modalTitle2": "(Modification)",
+    "imgClickLabel": "Cliquer pour changer",
+    "imgUpdated": "Avatar mis à jour !!!",
+    "imgError": "Erreur lors du téléchargement de l'image",
+    "dateLabel": "Date de naissance",
+    "allergiesLabel": "Allergies",
+    "lastNameLabel": "Nom",
+    "firstNameLabel": "Prénom",
+    "birthdayNameLabel": "Date de naissance",
+    "btnSave": "Enregistrer",
+    "btnEdit": "Modifier",
+    "btnCancel": "Annuler",
+    "btnDelete": "Supprimer"
+}

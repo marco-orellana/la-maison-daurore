@@ -1,0 +1,28 @@
+{
+    "actors": [
+        {
+            "id": "IJNDVFBHCD",
+            "title": "children",
+            "label": "Children"
+        },
+        {
+            "id": "RGBGVBCHSN",
+            "title": "parent",
+            "label": "Parents"
+        },
+        {
+            "id": "VBGNVGCHDNXD",
+            "title": "collaborator",
+            "label": "Collaborators"
+        },
+        {
+            "id": "UEHSDVHSB",
+            "title": "admin",
+            "label": "Administrators"
+        }
+    ],
+    "search": "Search",
+    "searchLastName": "by last name",
+    "searchFirstName": "by first name",
+    "btnValidate": "Save Changes"
+}

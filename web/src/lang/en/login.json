@@ -1,0 +1,9 @@
+{
+    "title": "Sign in",
+    "emailLabel": "Your email address",
+    "passwordLabel": "Your password",
+    "buttonLabel": "Log in",
+    "messageErrorLogin": "Incorrect email or password",
+    "messageSnack": "You are connected",
+    "loginFileLoadError": "An error occurred while loading the form"
+}

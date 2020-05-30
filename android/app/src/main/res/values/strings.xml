@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Maison D\'aurore</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">send</string>
+
+    <string name="nom_salle">    Nom de la sale           </string>
+    <string name="nombre_place"> Nombre de place       </string>
+    <string name="num_telephone">Telephone             </string>
+    <string name="btn_quitter">Quitter</string>
+
+
+    <string name="menu_logout">Logout</string>
+    <string name="menu_presence">Presence</string>
+    <string name="menu_listes_enfants">Listes  enfants</string>
+    <string name="menu_listes_collaborateurs">Listes de collaborateur</string>
+    <string name="menu_historique">Historiques</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_remember">Remember Me</string>
+    <string name="txt_forgot_password">Forgot Password</string>
+    <string name="txt_connecter">Connecter</string>
+    <string name="txt_admin">Admin</string>
+    <string name="txt_mail">maisonauror@gmail.com</string>
+    <string name="fragments_listes_des_collaborateurs">Fragments listes des collaborateurs</string>
+    <string name="listes_presence" />
+    <string name="fragments_listes_des_enfants" />
+    <string name="salle_1">salle 1</string>
+    <string name="salle_3">salle 3</string>
+    <string name="salle_2">salle 2</string>
+    <string name="salle_4">salle 4</string>
+    <string name="logoback" />
+    <string name="home">Home</string>
+    <string name="txt_profil_enfant">Detail Enfants</string>
+    <string name="txt_profil_collab">Details Collaborateurs</string>
+    <string name="txt_suivi">Suivi Quotidien</string>
+    <string name="textview">TextView</string>
+
+    <string name="txt_commentaire">Commentaire</string>
+    <string name="txt_content">Content</string>
+    <string name="txt_Neutre">Neutre</string>
+    <string name="txt_pas_content">Pas content</string>
+    <string name="txt_motivation">Motivation</string>
+    <string name="txt_autonomie">Autonomie</string>
+    <string name="txt_perseverance">Persevernce</string>
+    <string name="txt_organisation">Organisation</string>
+    <string name="txt_comportement">Comportement</string>
+    <string name="txt_difficulte">Difficultes: </string>
+    <string name="txt_force">Forces: </string>
+    <string name="txt_a_faire">Ce qu\'il reste a faire: </string>
+    <string name="txt_soumettre">Soumettre</string>
+    <string name="todo">TODO</string>
+    <string name="logo_image">logo image</string>
+    <string name="save">save</string>
+
+
+</resources>

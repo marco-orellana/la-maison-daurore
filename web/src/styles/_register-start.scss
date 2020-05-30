@@ -1,0 +1,77 @@
+@import "./base";
+.sign-up {
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	form {
+		width: 100%;
+		height: auto;
+		margin: auto;
+		> div.fields {
+			padding-left: 1em;
+			display: flex;
+			flex-direction: column;
+			> span {
+				font-size: 1.2em;
+				text-align: left;
+			}
+			.next-step {
+				align-self: flex-end;
+				width: auto;
+
+				cursor: pointer;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				padding: 0.2em;
+				height: auto;
+				transition: all 0.4s;
+				&:hover {
+					border-radius: 0.2em;
+					background-color: rgba($color: $primaryColor, $alpha: 0.2);
+					box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+					> div {
+						transition: all 0.5s;
+						width: 3em;
+						height: 1.5em;
+						background-image: url(../pictures/hand-right.png);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: contain;
+					}
+				}
+				p {
+					padding-left: 0.5em;
+					font-size: 1.3em;
+				}
+				> div {
+					transition: all 0.5s;
+					width: 0em;
+					height: 0em;
+				}
+			}
+			> div {
+				> label {
+					padding: 0em 1em;
+					border-radius: 0.5em;
+					transition: all 0.3s;
+					.MuiCheckbox-colorSecondary {
+						transition: all 0.3s;
+					}
+					.MuiCheckbox-colorSecondary.Mui-checked {
+						color: black;
+					}
+					&:hover {
+						background-color: $primaryColor;
+						color: $whiteColor;
+						.MuiCheckbox-colorSecondary {
+							color: $whiteColor;
+						}
+					}
+				}
+			}
+		}
+	}
+}

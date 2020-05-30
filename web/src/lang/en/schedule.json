@@ -1,0 +1,19 @@
+{
+    "generationTitle": "generation of schedules",
+    "from": "from",
+    "to": "to",
+    "btnGenerate": "GENERATE",
+    "searchByDate": "Search by date",
+    "searchDate": "by date",
+    "searchClassroom": "by classroom",
+    "allClassroom": "All classrooms",
+    "yes": "YES",
+    "no": "NO",
+    "head": {
+        "child": "Children",
+        "collab": "Collaborators",
+        "classroom": "Classrooms",
+        "date": "Dates",
+        "isAbsent": "Absences"
+    }
+}

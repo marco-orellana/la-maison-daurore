@@ -1,0 +1,62 @@
+{
+    "addListForHighAdmin": [
+        {
+            "id": "IJNDVFBHCD",
+            "title": "child",
+            "label": "New child",
+            "required": "** if the parent is already registered **"
+        },
+        {
+            "id": "TWGSDVCHEDJH",
+            "title": "both",
+            "label": "New parent and collaborator",
+            "required": "** requires the registration of at least one child **"
+        },
+        {
+            "id": "RGBGVBCHSN",
+            "title": "parent",
+            "label": "New parent",
+            "required": "** requires the registration of at least one child **"
+        },
+        {
+            "id": "VBGNVGCHDNXD",
+            "title": "collaborator",
+            "label": "New collaborator",
+            "required": ""
+        },
+        {
+            "id": "UEHSDVHSB",
+            "title": "admin",
+            "label": "New administrator",
+            "required": ""
+        }
+    ],
+    "addListForAdmin": [
+        {
+            "id": "IJNDVFBHCD",
+            "title": "child",
+            "label": "New child",
+            "required": "** if the parent is already registered **"
+        },
+        {
+            "id": "TWGSDVCHEDJH",
+            "title": "both",
+            "label": "New parent and collaborator",
+            "required": "** requires the registration of at least one child **"
+        },
+        {
+            "id": "RGBGVBCHSN",
+            "title": "parent",
+            "label": "New parent",
+            "required": "** requires the registration of at least one child **"
+        },
+        {
+            "id": "VBGNVGCHDNXD",
+            "title": "collaborator",
+            "label": "New collaborator",
+            "required": ""
+        }
+    ],
+    "back": "back",
+    "btnValidate": "Save Changes"
+}

@@ -1,0 +1,60 @@
+{
+    "fieldsets": [
+        {
+            "name": "expectations",
+            "fields": [
+                {
+                    "name": "expectationsVar",
+                    "type": "textAreaField",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "name": "needs",
+            "fields": [
+                {
+                    "name": "needsVar",
+                    "type": "textAreaField",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "name": "involvement",
+            "fields": [
+                {
+                    "name": "talents",
+                    "type": "textAreaField",
+                    "required": false
+                },
+                {
+                    "name": "availableFor",
+                    "type": "multipleField",
+                    "options": [
+                        {
+                            "name": "snacks",
+                            "required": true,
+                            "type": "checkboxField"
+                        },
+                        {
+                            "name": "organization",
+                            "required": true,
+                            "type": "checkboxField"
+                        },
+                        {
+                            "name": "support",
+                            "required": true,
+                            "type": "checkboxField"
+                        }
+                    ]
+                },
+                {
+                    "name": "otherInvolvement",
+                    "type": "textAreaField",
+                    "required": false
+                }
+            ]
+        }
+    ]
+}

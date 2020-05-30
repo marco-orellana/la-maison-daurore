@@ -1,0 +1,342 @@
+@import "./base";
+.detail-user {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+    > div.image {
+        width: 50%;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        > label {
+            height: 100%;
+            padding: 0;
+            width: 40%;
+            border-radius: 1em;
+            > span {
+                height: 100%;
+                position: relative;
+                border-radius: 1em;
+                > img {
+                    border-radius: 1em;
+                    width: 100%;
+                    height: 100%;
+                }
+                > p {
+                    border-radius: 1em;
+                    transition: all 0.3s;
+                    background-color: none;
+                    opacity: 0;
+                    position: absolute;
+                    background-color: rgba($color: #ffff, $alpha: 0.4);
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    > span {
+                        text-align: center;
+                        letter-spacing: 0em;
+                        font-size: 1.3em;
+                        font-weight: bolder;
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        > div.img-loading {
+            position: absolute;
+            height: 100%;
+            padding: 0;
+            width: 40%;
+            border-radius: 1em;
+            > div {
+                height: 100%;
+            }
+        }
+        > p {
+            width: 60%;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        > p.upload-success {
+            color: $secondaryColor;
+        }
+        > p.upload-error {
+            color: red;
+        }
+    }
+    > div.details-personnelles {
+        align-self: flex-start;
+        width: 50%;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        > div {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0.2em 1em;
+            transition: all 0.2s;
+            border-radius: 0.3em;
+            > p:nth-of-type(1) {
+                width: 55%;
+                letter-spacing: 0.02em;
+            }
+            > p:nth-of-type(2) {
+                letter-spacing: 0.06em;
+            }
+            &:hover {
+                background-color: rgba($color: #ffff, $alpha: 0.3);
+            }
+        }
+        .text-name {
+            margin-bottom: 1em;
+            font-size: 1.5em;
+            margin-left: 0em;
+            padding-left: 0em;
+            > p {
+                margin-left: 0em;
+                padding-left: 0.3em;
+                width: 100% !important;
+            }
+        }
+    }
+    > div.details {
+        > div.first {
+            > div {
+                padding-top: 1em;
+                margin: 0;
+                border-radius: 0.5em;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 0.9em;
+                height: 4em;
+                > div {
+                    height: 100%;
+                    width: 100%;
+                    margin: 0 1em;
+                    label {
+                        font-size: 0.9em;
+                    }
+                    > div {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        > div.child-detail,
+        > div.parent-collab-detail,
+        > div.admin-detail {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            padding-top: 2em;
+            > div {
+                margin-bottom: 2em;
+                height: 100%;
+                width: 100%;
+                border: 0.1em solid rgba($color: #000000, $alpha: 0.3);
+                border-width: 0.1em 0.05em;
+                border-radius: 0.5em;
+                padding: 0.5em;
+                background-color: rgba($color: #000000, $alpha: 0.02);
+                display: flex;
+                flex-direction: column;
+                transition: all 0.3s;
+                > div {
+                    margin: 0;
+                    border-radius: 0.5em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    font-size: 0.9em;
+                    height: 3em;
+                    > p {
+                        &:nth-of-type(1),
+                        &:nth-of-type(2) {
+                            font-size: 1.1em;
+                            width: 15%;
+                        }
+                    }
+                    > div {
+                        height: 100%;
+                        width: 25%;
+                        label {
+                            font-size: 0.9em;
+                        }
+                        > div {
+                            height: 100%;
+                        }
+                        &:nth-of-type(1) {
+                            height: 100%;
+                            width: 25%;
+                        }
+                        &:nth-of-type(2) {
+                            > div {
+                                > div {
+                                    height: 100%;
+                                    input {
+                                        margin-top: -0.8em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    > button {
+                        width: 15%;
+                        height: 100%;
+                    }
+                }
+            }
+            fieldset {
+                margin-bottom: 2em;
+                height: 100%;
+                width: 100%;
+                border: 0.1em solid rgba($color: #000000, $alpha: 0.3);
+                border-width: 0.1em 0.05em;
+                border-radius: 0.5em;
+                padding: 0.5em;
+                background-color: rgba($color: #000000, $alpha: 0.02);
+                display: flex;
+                transition: all 0.3s;
+                font-size: 1.1em;
+                > legend {
+                    margin-left: 1em;
+                    font-size: 1.2em;
+                    padding: 0 0.5em;
+                    border: 0.1em solid rgba($color: #000000, $alpha: 0.3);
+                    border-top: none;
+                    border-bottom: none;
+                    border-radius: 1em;
+                }
+                > div {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    > div {
+                        width: 48%;
+                        margin: 0.5em 0;
+                        border-radius: 0.5em;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: rgba($color: #000000, $alpha: 0.04);
+                        transition: all 0.3s;
+                        height: 3em;
+                        > p {
+                            font-size: 0.9em;
+                            padding: 0 1.5em;
+                            &:nth-of-type(2) {
+                                font-size: 1.1em;
+                                text-align: center;
+                                border-radius: 0.5em;
+                                color: rgb(54, 52, 52);
+                                background-color: rgba($color: #000000, $alpha: 0.03);
+                                border-bottom: 3px solid rgba($color: #000000, $alpha: 0.4);
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                > span {
+                                    &:nth-of-type(2) {
+                                        padding-left: 2em;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            background-color: whitesmoke;
+                        }
+                        .textarea {
+                            width: 100%;
+                            padding: 0.5em;
+                            transition: all 0.2s;
+                            resize: vertical;
+                            padding-top: 1.5em;
+
+                            font-size: 1.1em;
+                            text-align: left;
+                            border-radius: 0.5em;
+                            color: rgb(54, 52, 52);
+                            background-color: rgba($color: #000000, $alpha: 0.03);
+                            border-bottom: 3px solid rgba($color: #000000, $alpha: 0.4);
+                            height: auto;
+
+                            &:focus {
+                                padding-top: 0.5em;
+                                font-size: 1em;
+                                border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+                                color: rgba(0, 0, 0, 0.8);
+                                outline: none;
+                            }
+                        }
+
+                        .select-detail {
+                            width: 50%;
+                        }
+                    }
+                    .max {
+                        height: auto;
+                        width: 100%;
+                        > p {
+                            width: 100%;
+                            &:nth-of-type(1) {
+                                height: 3em;
+                            }
+                            &:nth-of-type(2) {
+                                font-style: italic;
+                                height: auto;
+                                align-items: flex-start;
+                            }
+                        }
+                    }
+                    .row {
+                        width: 100%;
+                    }
+                }
+            }
+            .parent-number {
+                width: 100%;
+            }
+        }
+    }
+
+    .edit-loading {
+        height: 100%;
+    }
+}
+.btn-delete {
+    border-radius: 10em !important;
+    background-color: rgb(235, 83, 83) !important;
+    &:hover {
+        background-color: rgb(228, 28, 28) !important;
+    }
+}
+.btn-edit {
+    border-radius: 10em !important;
+    background-color: #e0e0e0 !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    &:hover {
+        background-color: #afafaf !important;
+    }
+}
+.btn-save {
+    border-radius: 10em !important;
+    background-color: rgba($color: $secondaryColor, $alpha: 0.5) !important;
+    color: #f0f0f0 !important;
+    &:hover {
+        background-color: $secondaryColor !important;
+    }
+}
+
+.loading-effect {
+    opacity: 0.2;
+}

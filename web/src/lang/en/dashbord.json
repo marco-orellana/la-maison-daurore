@@ -1,0 +1,9 @@
+{
+    "menuTitle": "MENUS",
+    "modal": {
+        "title": "Confirmation",
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+    },
+    "messageRequiredSaveChangeSnack": "Please cancel or save the changes first"
+}

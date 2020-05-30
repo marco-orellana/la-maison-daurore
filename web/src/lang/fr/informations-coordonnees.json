@@ -1,0 +1,79 @@
+{
+    "title": "Informations et coordonnées",
+    "sex": {
+        "label": "titre",
+        "labelError": "Obligatoire",
+        "female": {
+            "label": "Mrs"
+        },
+        "male": {
+            "label": "Mr"
+        }
+    },
+    "birthday": {
+        "label": "Date de naissance",
+        "labelError": "Obligatoire"
+    },
+    "last_name": {
+        "label": "Nom",
+        "labelError": "Obligatoire"
+    },
+    "first_name": {
+        "label": "Prénom",
+        "labelError": "Obligatoire"
+    },
+    "address": {
+        "label": "Adresse",
+        "labelError": "Obligatoire"
+    },
+    "contacts": {
+        "label": "Contacts",
+        "labelError": "Au moins un contact obligatoire"
+    },
+    "contacts_personal": {
+        "label": "Personnel"
+    },
+    "contacts_home": {
+        "label": "Maison"
+    },
+    "contacts_work": {
+        "label": "Travail"
+    },
+    "contacts_emergency": {
+        "label": "Urgence"
+    },
+    "email": {
+        "label": "Adresse email",
+        "labelError": "Adresse email invalide"
+    },
+    "is_subscribed": {
+        "label": "Souhaitez-vous vous abonner à la liste de diffusion électronique de la Maison Aurore?"
+    },
+    "has_child": {
+        "label": "Avez-vous un ou plusieurs enfants de moins de 18 ans?"
+    },
+    "membership": {
+        "title1": "Le membership permet de participer activement a la vie democratique de la Maison d'Aurore et demontre un fier appui a la mission et aux actions de l'organisme.",
+        "title2": "La carte de membre est valide du 1er avril au 31 mars de l'annee suivante. Il en coute 5$ pour se la procurer.",
+        "label": "Adhésion",
+        "labelError": "Obligatoire",
+        "membership_becomeMember": {
+            "label": "Devenir membre"
+        },
+        "membership_alreadyMember": {
+            "label": "Déjà membre"
+        },
+        "membership_notWantMember": {
+            "label": "Pas pour le moment"
+        }
+    },
+    "membership_becomeMember_memberCard": {
+        "label": "Carte de remise"
+    },
+    "membership_becomeMember_discountCard": {
+        "label": "Carte de membre"
+    },
+    "membership_becomeMember_paymentMethod": {
+        "label": "Mode de paiement"
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "fieldsets": [
+        {
+            "name": "availabilityInterest",
+            "fields": [
+                {
+                    "name": "availability",
+                    "type": "multipleField",
+                    "options": [
+                        {
+                            "name": "monday",
+                            "required": true,
+                            "type": "checkboxField"
+                        },
+                        {
+                            "name": "tuesday",
+                            "required": true,
+                            "type": "checkboxField"
+                        },
+                        {
+                            "name": "wednesday",
+                            "required": true,
+                            "type": "checkboxField"
+                        },
+                        {
+                            "name": "thursday",
+                            "required": true,
+                            "type": "checkboxField"
+                        }
+                    ]
+                },
+                {
+                    "name": "interest",
+                    "type": "multipleField",
+                    "options": [
+                        {
+                            "name": "magicJournal",
+                            "required": true,
+                            "type": "checkboxField"
+                        },
+                        {
+                            "name": "serveSnack",
+                            "required": true,
+                            "type": "checkboxField"
+                        },
+                        {
+                            "name": "animationPreparation",
+                            "required": true,
+                            "type": "checkboxField"
+                        },
+                        {
+                            "name": "accompanyWorkshop",
+                            "required": true,
+                            "type": "checkboxField"
+                        },
+                        {
+                            "name": "prepareSnack",
+                            "required": true,
+                            "type": "checkboxField"
+                        },
+                        {
+                            "name": "accompanyInternet",
+                            "required": true,
+                            "type": "checkboxField"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "motivationExperience",
+            "fields": [
+                {
+                    "name": "motivation",
+                    "type": "textAreaField",
+                    "required": false
+                },
+                {
+                    "name": "experience",
+                    "type": "textAreaField",
+                    "required": false
+                },
+                {
+                    "name": "comment",
+                    "type": "textAreaField",
+                    "required": false
+                },
+                {
+                    "name": "heard",
+                    "type": "textAreaField",
+                    "required": false
+                }
+            ]
+        }
+    ]
+}

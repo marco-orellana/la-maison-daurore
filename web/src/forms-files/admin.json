@@ -1,0 +1,52 @@
+{
+    "create": [
+        {
+            "name": "sex",
+            "type": "selectField",
+            "simple": true,
+            "required": true
+        },
+        {
+            "name": "lastName",
+            "type": "textField",
+            "required": false
+        },
+        {
+            "name": "firstName",
+            "type": "textField",
+            "required": false
+        },
+        {
+            "name": "contactPersonal",
+            "type": "phoneField",
+            "required": false
+        },
+        {
+            "name": "contactWork",
+            "type": "phoneField",
+            "required": false
+        },
+        {
+            "name": "email",
+            "type": "textField",
+            "required": true
+        },
+        {
+            "name": "password",
+            "type": "textField",
+            "otherType": "password",
+            "required": false
+        },
+        {
+            "name": "confirmPassword",
+            "type": "textField",
+            "otherType": "password",
+            "required": false
+        },
+        {
+            "name": "validation",
+            "type": "checkboxField",
+            "required": false
+        }
+    ]
+}

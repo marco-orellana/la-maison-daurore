@@ -1,0 +1,97 @@
+@import "./base";
+footer {
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5em !important;
+    background-color: rgba($color: $primaryColor, $alpha: 0.7);
+    > div {
+        padding: 0em 1em;
+        width: calc(100% / 3);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        &:first-of-type {
+            font-size: 0.7em;
+            justify-content: space-around;
+            > div {
+                display: flex;
+                flex-wrap: wrap;
+                h3 {
+                    padding-right: 1em;
+                }
+                ul {
+                    list-style: none;
+                }
+            }
+        }
+        &:nth-child(2) {
+            // box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.6);
+            align-items: center;
+            justify-content: center;
+        }
+        &:last-child {
+            padding: 1em 3em;
+            justify-content: space-around;
+            button {
+                width: 70%;
+                color: rgba(0, 0, 0, 0.8);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@include responsive(phone) {
+    footer {
+        font-size: 1em;
+        height: 10vh;
+        padding: 0 0.5em !important;
+        align-items: center;
+        > div {
+            width: 50%;
+            padding: 0em 0.3em;
+            h2 {
+                display: none;
+            }
+            > div {
+                flex-direction: column;
+            }
+
+            &:last-child {
+                button {
+                    margin: 0.9em;
+                    padding: 0.3em;
+                    font-size: 0.55em;
+                    width: 100%;
+                }
+            }
+        }
+        .map {
+            display: none;
+        }
+    }
+}
+@include responsive(tablet) {
+    footer {
+        font-size: 0.9em;
+        height: 12vh;
+        padding: 0 2em !important;
+        > div {
+            width: 50%;
+            padding: 1em 1em;
+            > div {
+                flex-direction: column;
+            }
+        }
+        .map {
+            display: none;
+        }
+    }
+}
+@include responsive(desktop) {
+}

@@ -1,0 +1,47 @@
+{
+    "title": "Administrator account",
+    "sex": {
+        "label": "Title",
+        "labelError": "Select a title",
+        "options": [
+            {
+                "value": "female",
+                "label": "Mrs"
+            },
+            {
+                "value": "male",
+                "label": "Mr"
+            }
+        ]
+    },
+    "lastName": {
+        "label": "Last name",
+        "labelError": "Required"
+    },
+    "firstName": {
+        "label": "First name",
+        "labelError": "Required"
+    },
+    "contactPersonal": {
+        "label": "Personal number"
+    },
+    "contactWork": {
+        "label": "Work number"
+    },
+    "email": {
+        "label": "E-mail adress",
+        "labelError": "Invalid email address"
+    },
+    "password": {
+        "label": "Password",
+        "labelError": "Different or invalid password"
+    },
+    "confirmPassword": {
+        "label": "Confirm password",
+        "labelError": "Different or invalid password"
+    },
+    "validation": {
+        "label": "Account validity"
+    },
+    "buttonLabel": "Save"
+}

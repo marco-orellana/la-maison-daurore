@@ -1,0 +1,62 @@
+{
+    "addListForHighAdmin": [
+        {
+            "id": "IJNDVFBHCD",
+            "title": "child",
+            "label": "Nouvel Enfant",
+            "required": "** si le parent est déjà inscrit **"
+        },
+        {
+            "id": "TWGSDVCHEDJH",
+            "title": "both",
+            "label": "Nouveau parent et collaborateur",
+            "required": "** requiert l'inscription d'au moins un enfant **"
+        },
+        {
+            "id": "RGBGVBCHSN",
+            "title": "parent",
+            "label": "Nouveau parent",
+            "required": "** requiert l'inscription d'au moins un enfant **"
+        },
+        {
+            "id": "VBGNVGCHDNXD",
+            "title": "collaborator",
+            "label": "Nouveau collaborateur",
+            "required": ""
+        },
+        {
+            "id": "UEHSDVHSB",
+            "title": "admin",
+            "label": "Nouveau administrateur",
+            "required": ""
+        }
+    ],
+    "addListForAdmin": [
+        {
+            "id": "IJNDVFBHCD",
+            "title": "child",
+            "label": "Nouvel Enfant",
+            "required": "** si le parent est déjà inscrit **"
+        },
+        {
+            "id": "TWGSDVCHEDJH",
+            "title": "both",
+            "label": "Nouveau parent et collaborateur",
+            "required": "** requiert l'inscription d'au moins un enfant **"
+        },
+        {
+            "id": "RGBGVBCHSN",
+            "title": "parent",
+            "label": "Nouveau parent",
+            "required": "** requiert l'inscription d'au moins un enfant **"
+        },
+        {
+            "id": "VBGNVGCHDNXD",
+            "title": "collaborator",
+            "label": "Nouveau collaborateur",
+            "required": ""
+        }
+    ],
+    "back": "retour",
+    "btnValidate": "Enregistrer les modifications"
+}

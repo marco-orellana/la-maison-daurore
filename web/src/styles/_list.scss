@@ -1,0 +1,68 @@
+@import "./base";
+.list {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    .list-menu {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        padding-bottom: 0.5em;
+        > div button {
+            transition: all 0.3s;
+        }
+        > div button.MuiButton-contained {
+            color: $whiteColor;
+        }
+    }
+    .search-container {
+        .search-fields {
+            > div > div {
+                display: flex;
+                align-items: center;
+                height: 4em;
+                > div {
+                    width: max-content;
+                    margin: 0 0.2em;
+                    height: 80%;
+                    > div {
+                        height: 100%;
+                    }
+                    &:nth-child(3),
+                    &:nth-child(5) {
+                        width: 15em;
+                    }
+                }
+            }
+        }
+    }
+    .button-valider {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5em 2em;
+        button {
+            width: auto;
+            color: black;
+        }
+    }
+}
+
+@include responsive(phone) {
+    .list {
+        .list-menu {
+            flex-direction: column;
+            .btnGroup {
+                margin: 1em auto;
+                .MuiButton-root {
+                    padding: 0.2em 1em;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+@include responsive(tablet) {
+}
+@include responsive(desktop) {
+}

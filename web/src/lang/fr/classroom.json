@@ -1,0 +1,29 @@
+{
+    "childCount": "Total des élèves",
+    "seatCount": "Total des places",
+    "contact": "Contact du site",
+    "availability": "Disponibilités",
+    "notAvailability": "pas de disponibilité",
+    "days": {
+        "lundi": "LUNDI",
+        "mardi": "MARDI",
+        "mercredi": "MERCREDI",
+        "jeudi": "JEUDI",
+        "vendredi": "VENDREDI",
+        "samedi": "SAMEDI",
+        "dimanche": "DIMANCHE"
+    },
+    "listLabel": "Liste des enfants",
+    "emptyList": "Cette salle ne contient pas d'enfant",
+    "btnEdit": "Modifier",
+    "btnDelete": "Supprimer",
+    "btnAdd": "Ajouter une nouvelle salle",
+    "formAddTitle": "Ajout",
+    "formEditTitle": "Modification",
+    "nameClassroomLbl": "Nom de la salle",
+    "seatClassroomLbl": "Nombre de places",
+    "phoneClassroomLbl": "Contact du site",
+    "formBtn": "Enregister",
+    "formError": "Veuillez renseigner tous les champs",
+    "deleteError": "SUPPRESSION INVALIDE: Cette salle est associée à un ou plusieurs enfants"
+}

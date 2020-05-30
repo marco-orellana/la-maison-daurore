@@ -1,0 +1,73 @@
+@import "./base";
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .generate-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-height: 8em;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        margin-bottom: 1em;
+        background-color: rgba($color: #ffffff, $alpha: 0.6);
+        > div {
+            height: 4em;
+            display: flex;
+            align-items: center;
+            > * {
+                width: 15em;
+                margin: 0 0.5em;
+                height: 100%;
+                > div {
+                    height: 100%;
+                }
+            }
+            > button {
+                width: auto;
+                padding: 0 3em;
+                background-color: rgb(68, 65, 65);
+                color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
+                border: none;
+                font-size: 1.1em;
+                &:hover {
+                    background-color: rgb(32, 31, 31);
+                }
+            }
+        }
+        > p {
+            font-size: 1.7em;
+            height: auto;
+            text-transform: uppercase;
+        }
+    }
+    .search-container {
+        border-radius: 0.5em 0.5em 0 0;
+        background-color: rgba($color: #ffffff, $alpha: 0.6);
+        display: flex;
+        justify-content: flex-start;
+        height: 4em;
+        padding: 0.5em;
+        margin-top: 1em;
+        > div,
+        > label {
+            margin: 0 0.5em 0 0;
+            width: 13em;
+            height: 100%;
+            > div {
+                height: 100%;
+            }
+        }
+        > label {
+            width: auto;
+        }
+    }
+
+    .list-container {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}

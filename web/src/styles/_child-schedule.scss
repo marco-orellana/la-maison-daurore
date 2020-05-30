@@ -1,0 +1,41 @@
+@import "./base";
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .search-container {
+        border-radius: 0.5em 0.5em 0 0;
+        background-color: rgba($color: #ffffff, $alpha: 0.6);
+        display: flex;
+        justify-content: flex-start;
+        height: 4.5em;
+        padding: 0.5em;
+        margin: 0;
+        > div,
+        > label {
+            margin: 0 0.5em 0 0;
+            width: 13em;
+            height: 100%;
+            > div {
+                height: 100%;
+            }
+        }
+        > label {
+            width: auto;
+        }
+        > div:first-of-type {
+            width: 25em;
+            > div {
+                > div {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .list-container {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}

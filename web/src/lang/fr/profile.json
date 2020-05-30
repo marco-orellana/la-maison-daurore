@@ -1,0 +1,59 @@
+{
+    "title": "Mise à jour du profil",
+    "sex": {
+        "label": "Titre",
+        "labelError": "Sélectionner un titre",
+        "options": [
+            {
+                "value": "female",
+                "label": "Mrs"
+            },
+            {
+                "value": "male",
+                "label": "Mr"
+            }
+        ]
+    },
+    "last_name": {
+        "label": "Nom",
+        "labelError": "Obligatoire"
+    },
+    "first_name": {
+        "label": "Prénom",
+        "labelError": "Obligatoire"
+    },
+    "personal": {
+        "label": "Numéro personnel",
+        "labelError": "Au moins un contact"
+    },
+    "work": {
+        "label": "Numéro de travail",
+        "labelError": "Au moins un contact"
+    },
+    "home": {
+        "label": "Numéro de maison",
+        "labelError": "Au moins un contact"
+    },
+    "emergency": {
+        "label": "Numéro d'urgence",
+        "labelError": "Au moins un contact"
+    },
+    "email": {
+        "label": "Adresse email",
+        "labelError": "Adresse email invalide"
+    },
+    "oldPassword": {
+        "label": "Mot de passe",
+        "labelError": "Mot de passes invalide"
+    },
+    "newPassword": {
+        "label": "Nouveau mot de passe",
+        "labelError": "Mot de passes différents"
+    },
+    "newConfirmPassword": {
+        "label": "Confirmer le nouveau mot de passe",
+        "labelError": "Mot de passes différents"
+    },
+    "buttonLabel": "Modifier le profil",
+    "messageSnack": "Modification effectuée avec succès"
+}

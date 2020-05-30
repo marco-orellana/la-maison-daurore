@@ -1,0 +1,171 @@
+@import "./base";
+.collaborator-benevoles {
+    h1 {
+        text-align: center;
+    }
+    > div {
+        > fieldset {
+            border: 0.3em solid rgba($color: #000000, $alpha: 0.3);
+            border-left: none;
+            border-right: none;
+            border-radius: 1em;
+            padding: 0.5em;
+            margin: 0.5em;
+            margin-bottom: 2em;
+            background-color: rgba($color: #000000, $alpha: 0.05);
+            > legend {
+                margin-left: 2em;
+                font-size: 1.2em;
+                padding: 0 0.5em;
+                border: 0.3em solid rgba($color: #000000, $alpha: 0.3);
+                border-top: none;
+                border-bottom: none;
+                border-radius: 1em;
+            }
+            > div.fields {
+                display: flex;
+                flex-wrap: wrap;
+                > p {
+                    padding: 0.5em;
+                    width: 100%;
+                    text-align: center;
+                }
+                .error {
+                    color: red;
+                }
+                > div {
+                    margin: 0.1em;
+                    width: 100%;
+                    padding: 0.5em;
+                    display: flex;
+                    align-items: center;
+                    > div {
+                        width: 100%;
+                    }
+                    .fieldset {
+                        border: 3px solid rgba(0, 0, 0, 0.2);
+                        height: auto;
+                        display: flex;
+                        flex-flow: column wrap;
+                        border-radius: 0.5em;
+                        .head {
+                            max-width: 95%;
+                            align-self: flex-start;
+                            display: flex;
+
+                            p {
+                                text-align: center;
+                                padding: 0.5em 1.5em;
+                                &:nth-child(1) {
+                                    text-transform: uppercase;
+                                    border-radius: 0em 0em 0.5em 0em;
+                                    align-self: start;
+                                    background-color: rgba(0, 0, 0, 0.2);
+                                }
+                                &:nth-child(2) {
+                                    background-color: transparent;
+                                    color: red;
+                                }
+                            }
+                        }
+                        .body {
+                            padding-left: 2em;
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content: center;
+                            > * {
+                                text-align: center;
+                            }
+                            > p {
+                                text-align: justify;
+                                width: 100%;
+                            }
+                            > div {
+                                width: 100%;
+                                flex-direction: row;
+                                padding: 0;
+                            }
+                        }
+                    }
+                    .textarea {
+                        width: 100%;
+                        padding: 0.5em;
+                        background-color: rgba(0, 0, 0, 0.09);
+                        border-top-left-radius: 4px;
+                        border-top-right-radius: 4px;
+                        border: none;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                        transition: all 0.2s;
+                        resize: vertical;
+                        padding-top: 1.5em;
+
+                        font-size: 1.1em;
+                        &:focus {
+                            transform: sc;
+                            padding-top: 0.5em;
+                            font-size: 1em;
+                            border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+                            color: rgba(0, 0, 0, 0.8);
+                            outline: none;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(1) {
+                > div.fields {
+                    > div {
+                        &:nth-of-type(1),
+                        &:nth-of-type(2) {
+                            > div {
+                                > div {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: flex-start;
+                                    > label {
+                                        width: 50%;
+                                        margin: 0;
+                                        transition: all 0.3s;
+                                        .Mui-checked {
+                                            color: $primaryColor;
+                                        }
+                                        &:hover {
+                                            color: $primaryColor;
+                                            > span > span {
+                                                color: $primaryColor;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive(phone) {
+    .collaborator-benevoles {
+        > div > fieldset:nth-of-type(1) > div.fields > div {
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                > div > div > label {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@include responsive(tablet) {
+    .collaborator-benevoles {
+        > div > fieldset:nth-of-type(1) > div.fields > div {
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                > div > div > label {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,203 @@
+@import "./base";
+
+.create-account {
+    overflow: hidden;
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+    > div {
+        width: calc(100% * 2);
+        height: 100%;
+        display: flex;
+        transition: all 0.5s;
+        .choice {
+            width: 50%;
+            height: calc(8em * 4);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            > div {
+                border-radius: 0.5em;
+                background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.6);
+                cursor: pointer;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                padding: 1em;
+                margin: 0 1em;
+                height: calc((100% / 4) - 2em);
+                transition: all 0.4s;
+                width: 50%;
+                &:hover {
+                    border-radius: 1em;
+                    background-color: #9fdfe0b7;
+                    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+                    > div {
+                        &:first-of-type {
+                            transition: all 0.5s;
+                            width: 5em;
+                            height: 2.5em;
+                            background-image: url(../pictures/hand-right.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                        }
+                    }
+                }
+                > div {
+                    &:first-of-type {
+                        transition: all 0.5s;
+                        width: 0em;
+                        height: 0em;
+                    }
+                    &:last-of-type {
+                        text-align: start;
+                        padding-left: 0.5em;
+                        p {
+                            font-size: 1.5em;
+                        }
+                        span {
+                            font-size: 1em;
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+        .add-container {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            position: relative;
+            > div.retour {
+                height: min-content;
+                padding: 0.3em 0.7em;
+                border: 5px solid rgba($color: rgb(255, 255, 255), $alpha: 0.6);
+                color: rgba($color: rgb(255, 255, 255), $alpha: 0.8);
+                text-transform: capitalize;
+                border-radius: 0.5em;
+
+                cursor: pointer;
+                transition: all 0.5s;
+                &:hover {
+                    background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.6);
+                    border: 5px solid transparent;
+                    color: black;
+                }
+            }
+            > div.contain {
+                width: calc(100% - 5em);
+                padding-left: 1em;
+                height: 100%;
+                overflow-y: auto;
+                .register-container {
+                    div.form-container {
+                        padding: 0;
+                        flex-wrap: nowrap;
+                        .forms {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    width: 8px;
+                }
+                &::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 6px rgba($color: #0000, $alpha: 0.3);
+                    -webkit-box-shadow: inset 0 0 6px rgba($color: #0000, $alpha: 0.3);
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    -webkit-border-radius: 10px;
+                    border-radius: 10px;
+                    background: rgba($color: $primaryColor, $alpha: 0.8);
+                    box-shadow: inset 0 0 6px $blackTrans;
+                    -webkit-box-shadow: inset 0 0 6px $blackTrans;
+                }
+                &::-webkit-scrollbar:window-inactive {
+                    width: 4px;
+                }
+                &::-webkit-scrollbar-thumb:window-inactive {
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+.fullSize {
+    background-color: rgba($color: $primaryColor, $alpha: 0);
+    overflow-y: auto;
+    height: 100% !important;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba($color: #0000, $alpha: 0.3);
+        -webkit-box-shadow: inset 0 0 6px rgba($color: #0000, $alpha: 0.3);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: rgba($color: $primaryColor, $alpha: 0.8);
+        box-shadow: inset 0 0 6px $blackTrans;
+        -webkit-box-shadow: inset 0 0 6px $blackTrans;
+    }
+    &::-webkit-scrollbar:window-inactive {
+        width: 4px;
+    }
+    &::-webkit-scrollbar-thumb:window-inactive {
+        background: transparent;
+    }
+}
+.hideAddDiv {
+    margin-left: -100%;
+    .choice {
+        transition: all 0.7s;
+        opacity: 0;
+        display: none;
+    }
+    .add-container {
+        transition: all 2s;
+        opacity: 1;
+    }
+}
+.showAddDiv {
+    margin-left: 0%;
+    .choice {
+        transition: all 2s;
+        opacity: 1;
+    }
+    .add-container {
+        transition: all 0.7s;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@include responsive(phone) {
+    .create-account {
+        height: 25em;
+        > div {
+            .add-container {
+                flex-direction: column;
+                > div.contain {
+                    height: 50em;
+                    padding: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@include responsive(tablet) {
+    .create-account {
+        height: 25em;
+    }
+}
+@include responsive(desktop) {
+}

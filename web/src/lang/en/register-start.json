@@ -1,0 +1,10 @@
+{
+    "titlePrimary": "registration",
+    "titleSecondary": "You register as a :",
+    "check": {
+        "parent": "Parent",
+        "collaborator": "Collaborator",
+        "both": "Parent and Collaborator"
+    },
+    "btnSubmit": "Continue"
+}

@@ -1,0 +1,41 @@
+{
+    "title": "Further information",
+    "expectations": {
+        "label": "Expectations",
+        "expectationsVar": {
+            "info": "As a parent, what do you expect from the Homework and Lesson Workshop at Aurore's House?",
+            "label": "",
+            "labelError": "Required"
+        }
+    },
+    "needs": {
+        "label": "Needs",
+        "needsVar": {
+            "info": "We are here to support you on a daily basis in your role as parent: how could we help you? (listening, training, conferences, themes, etc.)",
+            "label": ""
+        }
+    },
+    "involvement": {
+        "label": "Involvement",
+        "talents": {
+            "info": "Your involvement is important for your child's development: do you have talents?",
+            "label": ""
+        },
+        "availableFor": {
+            "label": "Would you be available for: "
+        },
+        "snacks": {
+            "label": "prepare or serve a snack for children?"
+        },
+        "organization": {
+            "label": "help organize parties?"
+        },
+        "support": {
+            "label": "accompany children during activities?"
+        },
+        "otherInvolvement": {
+            "info": "Would you be interested in participating in other activities of the Aurore's House?? (reception, secretariat, kitchen ...)",
+            "label": ""
+        }
+    }
+}

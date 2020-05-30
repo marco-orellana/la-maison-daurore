@@ -1,0 +1,51 @@
+@import "./base";
+header {
+    height: 10vh;
+    background-color: transparent !important;
+    div {
+        background-color: rgba($color: $primaryColor, $alpha: 0.6);
+        justify-content: space-between;
+        min-height: 100% !important;
+        > button.img {
+            background-image: url(../pictures/logo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 100%;
+            width: 13em;
+            border-radius: 1em;
+            font-size: 1em;
+        }
+        > div.right-head {
+            align-self: flex-start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            > div.lang {
+                margin: 0;
+                padding: 0.5em;
+                height: 2em;
+                .MuiOutlinedInput-input {
+                    padding: 0.5em 1em;
+                }
+            }
+        }
+    }
+}
+
+@include responsive(phone) {
+    header {
+        div {
+            > div.right-head {
+                > div.lang {
+                    height: 1.5em;
+                }
+            }
+        }
+    }
+}
+@include responsive(tablet) {
+}
+@include responsive(desktop) {
+}

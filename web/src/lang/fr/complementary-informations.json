@@ -1,0 +1,41 @@
+{
+    "title": "Informations Complémentaires",
+    "expectations": {
+        "label": "Attentes",
+        "expectationsVar": {
+            "info": "En tant que parent, qu'attendez-vous de l'atelier de devoirs et leçons de la Maison d'Aurore?",
+            "label": "",
+            "labelError": "Obligatoire"
+        }
+    },
+    "needs": {
+        "label": "Besoins",
+        "needsVar": {
+            "info": "Nous sommes la pour vous soutenir au quotidien dans votre rôle de parent: comment pourrions-nous vous aider? (écoute, formations, conférences, thèmes, etc.)",
+            "label": ""
+        }
+    },
+    "involvement": {
+        "label": "Implications",
+        "talents": {
+            "info": "Votre implication est importante pour l'épanouissement de votre enfant: avez-vous des talents?",
+            "label": ""
+        },
+        "availableFor": {
+            "label": "Seriez-vous disponible pour: "
+        },
+        "snacks": {
+            "label": "préparer ou servir la collation pour les enfants?"
+        },
+        "organization": {
+            "label": "aider à l'organisation des fêtes?"
+        },
+        "support": {
+            "label": "accompagner les enfants lors d'activités ?"
+        },
+        "otherInvolvement": {
+            "info": "Seriez-vous intéressé(e) a participé a d'autres activités de la Maison d'Aurore ? (accueil, secrétariat, cuisine...)",
+            "label": ""
+        }
+    }
+}

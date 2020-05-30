@@ -1,0 +1,167 @@
+@import "./base";
+
+.classroom {
+    //background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.6);
+    border-radius: 0.5em;
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+
+    > button {
+        border-radius: 0.5em;
+        align-self: flex-start;
+        margin-bottom: 1em;
+    }
+    > div {
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        > div {
+            border-radius: 1em;
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 23%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 0.5em;
+            margin-bottom: 0.5em;
+            transition: all 0.2s linear, height 0.2s linear;
+            height: 20em;
+            &:hover {
+                background-color: #9fdfe0b7;
+                border-radius: 0.5em;
+                transition: all 0.5s;
+                height: 23em;
+                border-radius: 0.5em;
+                box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+                .btn {
+                    display: flex;
+                }
+            }
+            > * {
+                height: calc(20em / 4);
+                padding: 0.3em 0.5em;
+            }
+            > h2 {
+                cursor: pointer;
+                padding-bottom: 1em;
+                text-transform: uppercase;
+            }
+            > p {
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                > span:last-of-type {
+                    font-size: 1.1em;
+                }
+            }
+            .availability {
+                height: calc(20em / 3);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                > p {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    > span {
+                        padding: 0em 0.5em;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .btn {
+                height: 3em;
+                display: flex;
+                justify-content: space-around;
+                display: none;
+                transition: all 0.5s;
+                > button {
+                    border-radius: 10em;
+                }
+            }
+        }
+
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba($color: #0000, $alpha: 0.3);
+            -webkit-box-shadow: inset 0 0 6px rgba($color: #0000, $alpha: 0.3);
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: rgba($color: $primaryColor, $alpha: 0.8);
+            box-shadow: inset 0 0 6px $blackTrans;
+            -webkit-box-shadow: inset 0 0 6px $blackTrans;
+        }
+        &::-webkit-scrollbar:window-inactive {
+            width: 4px;
+        }
+        &::-webkit-scrollbar-thumb:window-inactive {
+            background: transparent;
+        }
+    }
+}
+.dialog {
+    .div-dialog-edit-classroom {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto;
+        justify-content: space-around;
+        > * {
+            margin-bottom: 0.5em;
+        }
+        > p.error-classroom {
+            color: red;
+        }
+        .edit-input {
+            width: 100%;
+        }
+    }
+}
+
+@include responsive(phone) {
+    .classroom {
+        height: 65em;
+        > div {
+            > div {
+                height: 20em;
+                width: 65%;
+                > * {
+                    height: calc(100% / 5);
+                }
+                .btn {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+@include responsive(tablet) {
+    .classroom {
+        > div {
+            > div {
+                height: 20em;
+                width: 35%;
+                > * {
+                    height: calc(100% / 5);
+                }
+                .btn {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+@include responsive(desktop) {
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "5e6a3e314554933864b2c3f1",
+    "id_user": "5e6a3e314554933864b2c3b1",
+    "email": "admin@gmail.com",
+    "password": "abc123...",
+    "is_active": true
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3f2",
+    "id_user": "5e6a3e314554933864b2c3b2",
+    "email": "collab@gmail.com",
+    "password": "abc123...",
+    "is_active": true
+  }
+]

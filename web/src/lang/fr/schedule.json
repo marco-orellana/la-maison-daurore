@@ -1,0 +1,19 @@
+{
+    "generationTitle": "génération des horaires",
+    "from": "du",
+    "to": "au",
+    "btnGenerate": "GENERER",
+    "searchByDate": "Rechercher par date",
+    "searchDate": "par date",
+    "searchClassroom": "par salle",
+    "allClassroom": "Toutes les salles",
+    "yes": "OUI",
+    "no": "NON",
+    "head": {
+        "child": "Enfants",
+        "collab": "Collaborateurs",
+        "classroom": "Salles",
+        "date": "Dates",
+        "isAbsent": "Absences"
+    }
+}

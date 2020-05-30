@@ -1,0 +1,9 @@
+{
+    "lastname": "Last Name",
+    "firstname": "First Name",
+    "presence": "Presented",
+    "absence": "Absent",
+    "email": "Email",
+    "date": "Date",
+    "phone": "Phone"
+}

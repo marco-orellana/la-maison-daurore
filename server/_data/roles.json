@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "5e6a3e314554933864b2c3c2",
+    "title": "super_admin"
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3c3",
+    "title": "admin"
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3c4",
+    "title": "collaborater"
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3c5",
+    "title": "parent"
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3c6",
+    "title": "children"
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3c7",
+    "title": "collab_parent"
+  }
+]

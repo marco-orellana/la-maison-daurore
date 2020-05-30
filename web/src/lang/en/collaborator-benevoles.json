@@ -1,0 +1,65 @@
+{
+    "title": "Volunteer collaborators",
+    "availabilityInterest": {
+        "label": "Availability and Interest",
+        "availability": {
+            "label": "Availabilities",
+            "labelError": "You must check at least one availability"
+        },
+        "monday": {
+            "label": "ADL Monday    from 3.30 p.m. to 5.30 p.m."
+        },
+        "tuesday": {
+            "label": "ADL Tuesday   from 3.30 p.m. to 5.30 p.m."
+        },
+        "wednesday": {
+            "label": "ADL Wednesday from 3.30 p.m. to 5.30 p.m."
+        },
+        "thursday": {
+            "label": "ADL Thursday  from 3.30 p.m. to 5.30 p.m."
+        },
+        "interest": {
+            "label": "Interests",
+            "labelError": "Vous devez cocher au moins un intérêt"
+        },
+        "magicJournal": {
+            "label": "Collaborate in the Magic Journal"
+        },
+        "serveSnack": {
+            "label": "Serving the snack"
+        },
+        "animationPreparation": {
+            "label": "Animation of games - Party preparations"
+        },
+        "accompanyWorkshop": {
+            "label": "Accompany the children to the workshop"
+        },
+        "prepareSnack": {
+            "label": "Prepare snacks"
+        },
+        "accompanyInternet": {
+            "label": "Supporting children on the Internet"
+        }
+    },
+    "motivationExperience": {
+        "label": "Motivation and Experiences",
+        "motivation": {
+            "info": "",
+            "label": "Motivation to become a collaborator",
+            "labelError": "Required"
+        },
+        "experience": {
+            "info": "",
+            "label": "Relevant experience and training",
+            "labelError": "Required"
+        },
+        "comment": {
+            "info": "",
+            "label": "Comments"
+        },
+        "heard": {
+            "info": "Where did you hear about the need for collaborators?",
+            "label": ""
+        }
+    }
+}

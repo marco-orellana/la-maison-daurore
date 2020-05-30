@@ -1,0 +1,192 @@
+{
+    "fieldsets": [
+        {
+            "name": "identification",
+            "fields": [
+                {
+                    "name": "sex",
+                    "required": true,
+                    "type": "radioField",
+                    "radioOptions": [
+                        {
+                            "name": "female"
+                        },
+                        {
+                            "name": "male"
+                        }
+                    ]
+                },
+                {
+                    "name": "birthday",
+                    "type": "dateField",
+                    "min": 5,
+                    "max": 17,
+                    "format": "DD MMMM YYYY",
+                    "views": [
+                        "year",
+                        "month",
+                        "date"
+                    ],
+                    "required": true
+                },
+                {
+                    "name": "last_name",
+                    "type": "textField",
+                    "required": true
+                },
+                {
+                    "name": "first_name",
+                    "type": "textField",
+                    "required": true
+                },
+                {
+                    "name": "garde",
+                    "required": true,
+                    "type": "membershipField",
+                    "radioOptions": [
+                        {
+                            "name": "gardeAll"
+                        },
+                        {
+                            "name": "gardeShared",
+                            "info": "gardeSharedInfo"
+                        },
+                        {
+                            "name": "gardeMother"
+                        },
+                        {
+                            "name": "gardeFather"
+                        },
+                        {
+                            "name": "gardeOther"
+                        }
+                    ],
+                    "gardeParentOption": {
+                        "name": "gardeParentOption",
+                        "required": true,
+                        "type": "radioField",
+                        "radioOptions": [
+                            {
+                                "name": "gardeParentOptionYes"
+                            },
+                            {
+                                "name": "gardeParentOptionNo"
+                            }
+                        ]
+                    },
+                    "gardeOtherOption": {
+                        "name": "gardeOtherOption",
+                        "type": "textField",
+                        "required": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "schoolInfo",
+            "fields": [
+                {
+                    "name": "school",
+                    "type": "textField",
+                    "required": true
+                },
+                {
+                    "name": "schoolLevel",
+                    "type": "selectGroupedField",
+                    "grouped": true,
+                    "required": true
+                },
+                {
+                    "name": "adlRegister",
+                    "type": "checkboxField",
+                    "required": false
+                },
+                {
+                    "name": "lastRedoubleLevel",
+                    "type": "selectGroupedField",
+                    "grouped": true,
+                    "required": false
+                },
+                {
+                    "name": "registerReason",
+                    "type": "textField",
+                    "required": true
+                },
+                {
+                    "name": "evaluation",
+                    "type": "checkboxField",
+                    "required": false
+                },
+                {
+                    "name": "daycareService",
+                    "type": "multipleField",
+                    "options": [
+                        {
+                            "name": "daycareServiceYesName",
+                            "type": "textField",
+                            "required": true
+                        },
+                        {
+                            "name": "daycareServiceYesPhone",
+                            "type": "phoneField",
+                            "required": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "medicalInfo",
+            "fields": [
+                {
+                    "name": "ramq",
+                    "type": "multipleField",
+                    "options": [
+                        {
+                            "name": "expiration",
+                            "type": "dateField",
+                            "min": -10,
+                            "max": 0,
+                            "format": "MMMM YYYY",
+                            "views": [
+                                "year",
+                                "month"
+                            ],
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "name": "allergies",
+                    "type": "textAreaField",
+                    "required": false
+                },
+                {
+                    "name": "drug",
+                    "type": "textAreaField",
+                    "required": false
+                },
+                {
+                    "name": "othersInfos",
+                    "type": "textAreaField",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "name": "autorisation",
+            "fields": [
+                {
+                    "name": "autorisationPapper",
+                    "type": "checkboxField",
+                    "required": false
+                },
+                {
+                    "name": "autorisationInternet",
+                    "type": "checkboxField",
+                    "required": false
+                }
+            ]
+        }
+    ]
+}

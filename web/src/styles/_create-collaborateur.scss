@@ -1,0 +1,17 @@
+@import "./base";
+.create-collaborateur {
+	background-color: rgba($color: $primaryColor, $alpha: 0.3);
+	border-radius: $borderRadiusMain;
+	padding: 1em;
+}
+
+.form-legend {
+	font-size: larger;
+}
+
+.form-group {
+	margin: 1.5rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}

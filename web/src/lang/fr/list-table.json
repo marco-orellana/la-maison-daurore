@@ -1,0 +1,16 @@
+{
+    "head": {
+        "lastName": "nom",
+        "firstName": "prénom",
+        "allergies": "allergies",
+        "school": "ecole",
+        "classRoom": "Salle",
+        "phone": "contact",
+        "courriel": "courriel",
+        "optionDetail": "détails",
+        "optionValidation": "validations"
+    },
+    "body": {
+        "btnDetail": "voir détails"
+    }
+}

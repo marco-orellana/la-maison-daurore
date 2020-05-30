@@ -1,0 +1,20 @@
+{
+    "back": "Cancel",
+    "finalStep": {
+        "registerPassword": {
+            "updateInput": "Edit information",
+            "label": "Create a password to access your information once your account is validated ",
+            "label1": "",
+            "labelError": "The passwords are different",
+            "password": {
+                "label": "Password"
+            },
+            "confirmPassword": {
+                "label": "Confirm password"
+            },
+            "saveWithPassword": "Save with password",
+            "saveWithoutPassword": "Save without password"
+        },
+        "success": {}
+    }
+}

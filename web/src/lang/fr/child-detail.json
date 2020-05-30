@@ -1,0 +1,62 @@
+{
+    "schoolLevel": {
+        "label": "Niveau scolaire",
+        "labelError": "Obligatoire",
+        "level": [
+            {
+                "label": "Primaire",
+                "options": [
+                    {
+                        "value": "Primaire1",
+                        "label": "1er"
+                    },
+                    {
+                        "value": "Primaire2",
+                        "label": "2e"
+                    },
+                    {
+                        "value": "Primaire3",
+                        "label": "3e"
+                    },
+                    {
+                        "value": "Primaire4",
+                        "label": "4e"
+                    },
+                    {
+                        "value": "Primaire5",
+                        "label": "5e"
+                    },
+                    {
+                        "value": "Primaire6",
+                        "label": "6e"
+                    }
+                ]
+            },
+            {
+                "label": "Secondaire",
+                "options": [
+                    {
+                        "value": "Secondaire1",
+                        "label": "I"
+                    },
+                    {
+                        "value": "Secondaire2",
+                        "label": "II"
+                    },
+                    {
+                        "value": "Secondaire3",
+                        "label": "III"
+                    },
+                    {
+                        "value": "Secondaire4",
+                        "label": "IV"
+                    },
+                    {
+                        "value": "Secondaire5",
+                        "label": "V"
+                    }
+                ]
+            }
+        ]
+    }
+}

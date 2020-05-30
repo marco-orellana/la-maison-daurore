@@ -1,0 +1,65 @@
+{
+    "title": "Collaborateurs Bénévoles",
+    "availabilityInterest": {
+        "label": "Disponibilités et Intérêts",
+        "availability": {
+            "label": "Disponibilités",
+            "labelError": "Vous devez cocher au moins une disponibilité"
+        },
+        "monday": {
+            "label": "ADL Lundi    de 15h30 à 17h30"
+        },
+        "tuesday": {
+            "label": "ADL Mardi    de 15h30 à 17h30"
+        },
+        "wednesday": {
+            "label": "ADL Mercredi de 15h30 à 17h30"
+        },
+        "thursday": {
+            "label": "ADL Jeudi    de 15h30 à 17h30"
+        },
+        "interest": {
+            "label": "Intérêts",
+            "labelError": "Vous devez cocher au moins un intérêt"
+        },
+        "magicJournal": {
+            "label": "Collaborer au Journal Magique"
+        },
+        "serveSnack": {
+            "label": "Servir la collation"
+        },
+        "animationPreparation": {
+            "label": "Animation de jeux - Préparations fêtes"
+        },
+        "accompanyWorkshop": {
+            "label": "Accompagner les enfants à l'atelier"
+        },
+        "prepareSnack": {
+            "label": "Préparer des collations"
+        },
+        "accompanyInternet": {
+            "label": "Accompagner les enfants sur Internet"
+        }
+    },
+    "motivationExperience": {
+        "label": "Motivation et Expériences",
+        "motivation": {
+            "info": "",
+            "label": "Motivation à devenir collaborateur",
+            "labelError": "Obligatoire"
+        },
+        "experience": {
+            "info": "",
+            "label": "Expériences et formations pertinentes",
+            "labelError": "Obligatoire"
+        },
+        "comment": {
+            "info": "",
+            "label": "Commentaires"
+        },
+        "heard": {
+            "info": "Où avez-vous entendu parler du besoin de collaborateurs?",
+            "label": ""
+        }
+    }
+}

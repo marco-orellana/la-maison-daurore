@@ -1,0 +1,57 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+
+// Palettes de couleurs
+$primaryColor: rgb(1, 144, 147);
+$primaryColor2: #6f6a69;
+$secondaryColor: rgb(128, 185, 50);
+$secondaryColor2: rgb(149, 173, 115);
+$otherColor: #f6f8ff;
+$fontColor: rgb(100, 108, 121);
+$hoverColor: rgb(240, 240, 240);
+$backgroundPrimary: rgb(192, 192, 192);
+$backgroundDark: rgb(158, 158, 158);
+$whiteColor: rgba(255, 255, 255, 0.8);
+//Palettes de couleurs avec Transparents
+$blackTrans: rgba(0, 0, 0, 0.712);
+
+// Breakpoint responsive
+$tablet: 768px;
+$desktop: 1200px;
+
+// border
+$borderRadiusMain: 10px;
+
+// Mixins responsive
+@mixin responsive($media) {
+    @if $media == phone {
+        @media only screen and (max-width: $tablet) {
+            @content;
+        }
+    } @else if $media == tablet {
+        @media only screen and (min-width: $tablet + 1) and (max-width: $desktop - 1) {
+            @content;
+        }
+    } @else if $media == desktop {
+        @media only screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+}
+
+// Mixins keyframes animation for all browsers
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-ms-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}

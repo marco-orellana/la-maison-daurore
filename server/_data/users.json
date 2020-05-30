@@ -1,0 +1,110 @@
+[
+  {
+    "_id": "5e6a3e314554933864b2c3b1",
+    "id_role": "5e6a3e314554933864b2c3c2",
+    "first_name": "super_admin",
+    "last_name": "super_admin"
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3b2",
+    "id_role": "5e6a3e314554933864b2c3c4",
+    "first_name": "Collab 1",
+    "last_name": "Collab 1",
+    "sex": "male",
+    "address": "222 Rue Bobette",
+    "birthday": "1994-12-24"
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3b3",
+    "id_role": "5e6a3e314554933864b2c3c4",
+    "first_name": "Collab 2",
+    "last_name": "Collab 2",
+    "sex": "female",
+    "address": "222 Rue Bobette",
+    "birthday": "1994-12-24",
+    "is_subscribed": false
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3b4",
+    "id_role": "5e6a3e314554933864b2c3c4",
+    "first_name": "Collab 3",
+    "last_name": "Collab 3",
+    "sex": "male",
+    "address": "222 Rue Bobette",
+    "birthday": "1994-12-24",
+    "is_subscribed": false
+  },
+  {
+    "_id": "5a6a3e314554933864b2c3e1",
+    "id_role": "5e6a3e314554933864b2c3c4",
+    "first_name": "Collab 4",
+    "last_name": "Collab 4",
+    "sex": "female",
+    "address": "222 Rue Bobette",
+    "birthday": "1994-12-24",
+    "is_subscribed": false
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3b5",
+    "id_role": "5e6a3e314554933864b2c3c5",
+    "first_name": "Parent 1",
+    "last_name": "Parent 1",
+    "sex": "male",
+    "address": "222 Rue Bobette",
+    "birthday": "1994-12-24",
+    "has_child": true,
+    "is_subscribed": false
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3b6",
+    "id_role": "5e6a3e314554933864b2c3c6",
+    "id_collaborater": "5e6a3e314554933864b2c3b2",
+    "id_parent": "5e6a3e314554933864b2c3b5",
+    "id_classroom": "5e6a3e314554933864b2c3e1",
+    "first_name": "Child 1",
+    "last_name": "Child 1",
+    "sex": "female",
+    "address": "222 Rue Bobette",
+    "birthday": "1994-12-24",
+    "is_subscribed": false
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3b7",
+    "id_role": "5e6a3e314554933864b2c3c6",
+    "id_collaborater": "5e6a3e314554933864b2c3b3",
+    "id_parent": "5e6a3e314554933864b2c3b5",
+    "id_classroom": "5e6a3e314554933864b2c3e2",
+    "first_name": "Child 2",
+    "last_name": "Child 2",
+    "sex": "male",
+    "address": "222 Rue Bobette",
+    "birthday": "1994-12-24",
+    "is_subscribed": false
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3b8",
+    "id_role": "5e6a3e314554933864b2c3c6",
+    "id_collaborater": "5e6a3e314554933864b2c3b4",
+    "id_parent": "5e6a3e314554933864b2c3b5",
+    "id_classroom": "5e6a3e314554933864b2c3e3",
+    "first_name": "Child 3",
+    "last_name": "Child 3",
+    "sex": "male",
+    "address": "222 Rue Bobette",
+    "birthday": "1994-12-24",
+    "is_subscribed": false
+  },
+  {
+    "_id": "5a6a3e314554933864b2c3e2",
+    "id_role": "5e6a3e314554933864b2c3c6",
+    "id_collaborater": "5a6a3e314554933864b2c3e1",
+    "id_parent": "5e6a3e314554933864b2c3b5",
+    "id_classroom": "5e6a3e314554933864b2c3e4",
+    "first_name": "Child 4",
+    "last_name": "Child 4",
+    "sex": "female",
+    "address": "222 Rue Bobette",
+    "birthday": "1994-12-24",
+    "is_subscribed": false
+  }
+]

@@ -1,0 +1,79 @@
+{
+    "title": "Information and contact details",
+    "sex": {
+        "label": "title",
+        "labelError": "Required",
+        "female": {
+            "label": "Mrs"
+        },
+        "male": {
+            "label": "Mr"
+        }
+    },
+    "birthday": {
+        "label": "Date of Birth",
+        "labelError": "Required"
+    },
+    "last_name": {
+        "label": "Last name",
+        "labelError": "Required"
+    },
+    "first_name": {
+        "label": "First name",
+        "labelError": "Required"
+    },
+    "address": {
+        "label": "Address",
+        "labelError": "Required"
+    },
+    "contacts": {
+        "label": "Contacts",
+        "labelError": "At least one required contact"
+    },
+    "contacts_personal": {
+        "label": "Personal"
+    },
+    "contacts_home": {
+        "label": "Home"
+    },
+    "contacts_work": {
+        "label": "Work"
+    },
+    "contacts_emergency": {
+        "label": "Emergency"
+    },
+    "email": {
+        "label": "E-mail adress",
+        "labelError": "Invalid email address"
+    },
+    "is_subscribed": {
+        "label": "Would you like to subscribe to the Maison Aurore electronic mailing list?"
+    },
+    "has_child": {
+        "label": "Do you have one or more children under the age of 18?"
+    },
+    "membership": {
+        "title1": "Membership allows you to actively participate in the democratic life of the Aurore's House and shows proud support for the organization's mission and actions.",
+        "title2": "The membership card is valid from April 1 to March 31 of the following year. It costs $ 5 to get it.",
+        "label": "Membership",
+        "labelError": "Required",
+        "membership_becomeMember": {
+            "label": "Become a member"
+        },
+        "membership_alreadyMember": {
+            "label": "Already a member"
+        },
+        "membership_notWantMember": {
+            "label": "Not for the moment"
+        }
+    },
+    "membership_becomeMember_memberCard": {
+        "label": "Discount card"
+    },
+    "membership_becomeMember_discountCard": {
+        "label": "Membership card"
+    },
+    "membership_becomeMember_paymentMethod": {
+        "label": "Payment method"
+    }
+}

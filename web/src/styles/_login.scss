@@ -1,0 +1,66 @@
+@import "./base";
+
+.login {
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	form {
+		transition: all 0.5s;
+		width: 100%;
+		> div.fields {
+			position: relative;
+			z-index: 1;
+			display: flex;
+			flex-wrap: wrap;
+			> div {
+				margin: 1em 0.5em;
+				width: 100%;
+			}
+			> div.div-button {
+				height: 20%;
+				padding-bottom: 0.5em;
+				button {
+					height: 100%;
+					font-size: 1em;
+					width: 40%;
+					color: rgba($color: black, $alpha: 1);
+				}
+			}
+			> div.loading {
+				position: absolute;
+				z-index: 2;
+				border-radius: $borderRadiusMain;
+				width: calc(100% - 1em);
+				height: calc(100% - 1em);
+				bottom: 0em;
+				left: 0em;
+				background-color: rgba($color: black, $alpha: 0.4);
+				.text {
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+}
+@include responsive(phone) {
+	.login {
+		padding: 1em;
+		form {
+			width: 100%;
+			.div-button button {
+				font-size: 1.5em !important;
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+@include responsive(tablet) {
+	.login {
+		form {
+			width: 100%;
+		}
+	}
+}

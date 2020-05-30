@@ -1,0 +1,59 @@
+{
+    "title": "Profile update",
+    "sex": {
+        "label": "Title",
+        "labelError": "Select a title",
+        "options": [
+            {
+                "value": "female",
+                "label": "Mrs"
+            },
+            {
+                "value": "male",
+                "label": "Mr"
+            }
+        ]
+    },
+    "last_name": {
+        "label": "Last name",
+        "labelError": "Required"
+    },
+    "first_name": {
+        "label": "First name",
+        "labelError": "Required"
+    },
+    "personal": {
+        "label": "Personal number",
+        "labelError": "At least one contact"
+    },
+    "work": {
+        "label": "Work number",
+        "labelError": "At least one contact"
+    },
+    "home": {
+        "label": "Home number",
+        "labelError": "At least one contact"
+    },
+    "emergency": {
+        "label": "Emergency number",
+        "labelError": "At least one contact"
+    },
+    "email": {
+        "label": "E-mail adress",
+        "labelError": "Invalid email address"
+    },
+    "oldPassword": {
+        "label": "Password",
+        "labelError": "Invalid password"
+    },
+    "newPassword": {
+        "label": "New Password",
+        "labelError": "Different passwords"
+    },
+    "newConfirmPassword": {
+        "label": "Confirm the new password",
+        "labelError": "Different passwords"
+    },
+    "buttonLabel": "Modify the profile",
+    "messageSnack": "Modification successfully completed"
+}

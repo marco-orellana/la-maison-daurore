@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "5e6a3e314554933864b2c3a1",
+    "title": "lundi",
+    "value": 1
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3a2",
+    "title": "mardi",
+    "value": 2
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3a3",
+    "title": "mercredi",
+    "value": 3
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3a4",
+    "title": "jeudi",
+    "value": 4
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3a5",
+    "title": "vendredi",
+    "value": 5
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3a6",
+    "title": "samedi",
+    "value": 6
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3a7",
+    "title": "dimanche",
+    "value": 7
+  }
+]

@@ -1,0 +1,9 @@
+{
+    "title": "Connexion",
+    "emailLabel": "Votre adresse courriel",
+    "passwordLabel": "Votre mot de passe",
+    "buttonLabel": "Se connecter",
+    "messageErrorLogin": "Email ou mot de passe incorrect",
+    "messageSnack": "Vous êtes connecté",
+    "loginFileLoadError": "Une erreur est survenu lors du chargement du formulaire"
+}

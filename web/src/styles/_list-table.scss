@@ -1,0 +1,230 @@
+@import "./base";
+
+.table-list {
+    margin: 0em 0;
+    display: flex;
+    max-height: 100%;
+    flex-direction: column;
+    border-radius: 0.5em;
+    table {
+        thead {
+            tr {
+                th {
+                    background-color: rgba($color: $primaryColor, $alpha: 0.9);
+                    border-color: rgba($color: $primaryColor, $alpha: 0.5);
+                    font-weight: bold;
+                    font-size: 1.1em;
+                    text-transform: uppercase;
+                    color: rgba($color: #ffffff, $alpha: 0.8);
+                }
+            }
+        }
+        tbody {
+            tr {
+                background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.6);
+                transition: all 0.2s;
+                td {
+                    border-color: rgba($color: $primaryColor, $alpha: 0.5);
+                    padding: 0.5em;
+                    font-weight: bold;
+                    font-size: 1em;
+                    cursor: pointer;
+                }
+                &:hover {
+                    background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.3) !important;
+                }
+                &:last-child {
+                    td {
+                        border: none;
+                    }
+                }
+                .td-validation {
+                    cursor: default;
+                }
+            }
+            .MuiToggleButtonGroup-grouped {
+                padding: 0px 22px;
+            }
+            .isValid.Mui-selected {
+                background-color: rgba(69, 221, 69, 0.726);
+                color: $blackTrans;
+            }
+            .isNotValid.Mui-selected {
+                background-color: rgba(255, 0, 0, 0.63);
+                .MuiSvgIcon-colorError {
+                    color: $blackTrans;
+                }
+            }
+        }
+    }
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba($color: #0000, $alpha: 0.3);
+        -webkit-box-shadow: inset 0 0 6px rgba($color: #0000, $alpha: 0.3);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: rgba($color: $primaryColor, $alpha: 0.8);
+        box-shadow: inset 0 0 6px $blackTrans;
+        -webkit-box-shadow: inset 0 0 6px $blackTrans;
+    }
+    &::-webkit-scrollbar:window-inactive {
+        width: 4px;
+    }
+    &::-webkit-scrollbar-thumb:window-inactive {
+        background: transparent;
+    }
+}
+
+.dialog {
+    > div {
+        > div {
+            background-color: #d0dadb;
+            > div {
+                &::-webkit-scrollbar {
+                    width: 8px;
+                }
+                &::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 6px rgba($color: #0000, $alpha: 0.3);
+                    -webkit-box-shadow: inset 0 0 6px rgba($color: #0000, $alpha: 0.3);
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    -webkit-border-radius: 10px;
+                    border-radius: 10px;
+                    background: rgba($color: #d0dadb, $alpha: 0.3);
+                    box-shadow: inset 0 0 6px $blackTrans;
+                    -webkit-box-shadow: inset 0 0 6px $blackTrans;
+                }
+                &::-webkit-scrollbar:window-inactive {
+                    width: 4px;
+                }
+                &::-webkit-scrollbar-thumb:window-inactive {
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .title h2 {
+        padding: 0;
+        text-align: left;
+        font-size: 1.3em;
+    }
+    .dialog-footer,
+    .title {
+        background-color: rgba($color: $primaryColor, $alpha: 0.9);
+    }
+    .dialog-footer {
+        justify-content: space-between;
+        > div {
+            &:nth-of-type(1) {
+                width: 100%;
+                > button {
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+}
+
+.table-loading {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        border-radius: 0.5em;
+        position: relative;
+    }
+}
+.to-be-print {
+    display: none;
+}
+@media print {
+    @page {
+        margin: 0cm;
+    }
+    body {
+        font-size: 9pt;
+        height: 100%;
+    }
+    #details-print {
+        height: 100%;
+        background: rgba($color: $primaryColor, $alpha: 0.08) !important;
+        width: 100%;
+        margin: 0cm;
+        padding: 0cm;
+        float: none;
+        .print-to-remove {
+            display: none;
+        }
+        .to-be-print {
+            display: block;
+        }
+        .detail-head,
+        .detail-footer {
+            background: rgba($color: $primaryColor, $alpha: 0.5) !important;
+            font-size: 20pt;
+            color: black;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 0.3cm;
+            padding: 0.5cm;
+        }
+        .detail-user {
+            height: auto;
+            padding: 0cm 2cm;
+            position: relative;
+        }
+        .detail-footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0cm;
+            padding: 1cm;
+        }
+        .fieldset {
+            p {
+                font-size: 11pt;
+            }
+        }
+    }
+}
+
+@include responsive(phone) {
+    .table-list {
+        table {
+            font-size: 1.2em !important;
+            tbody {
+                td button {
+                    font-size: 1em;
+                }
+                .MuiToggleButtonGroup-grouped {
+                    padding: 0px 12px;
+                }
+            }
+        }
+    }
+}
+@include responsive(tablet) {
+    .table-list {
+        table {
+            tbody {
+                td button {
+                    font-size: 1em;
+                }
+                .MuiToggleButtonGroup-grouped {
+                    padding: 0px 12px;
+                }
+            }
+        }
+    }
+}
+@include responsive(desktop) {
+}

@@ -1,0 +1,29 @@
+{
+    "childCount": "Total students",
+    "seatCount": "Total seats",
+    "contact": "Site phone number",
+    "availability": "Availabilities",
+    "notAvailability": "no availability",
+    "days": {
+        "lundi": "MONDAY",
+        "mardi": "TUESDAY",
+        "mercredi": "WEDNESDAY",
+        "jeudi": "THURSDAY",
+        "vendredi": "FRIDAY",
+        "samedi": "SATURDAY",
+        "dimanche": "SUNDAY"
+    },
+    "listLabel": "List of children",
+    "emptyList": "This classroom does not contain children",
+    "btnEdit": "Edit",
+    "btnDelete": "Remove",
+    "btnAdd": "Add a new classroom",
+    "formAddTitle": "Add",
+    "formEditTitle": "Modification",
+    "nameClassroomLbl": "Classroom name",
+    "seatClassroomLbl": "Total seats",
+    "phoneClassroomLbl": "Site phone number",
+    "formBtn": "Save",
+    "formError": "Please complete all fields",
+    "deleteError": "INVALID DELETION: This classroom is associated with one or more children"
+}

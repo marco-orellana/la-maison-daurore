@@ -1,0 +1,109 @@
+@import "./base";
+.print {
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    > .div-titles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-content: center;
+        > div {
+            margin: 0 1em 1em 0;
+            padding: 0.5em 1.5em;
+            border-radius: 0.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1em;
+
+            background-color: rgba(255, 255, 255, 0.6);
+            transition: all 0.2s linear, height 0.2s linear;
+            height: 5em;
+            > * {
+                transition: all 0.3s linear;
+            }
+            > h2 {
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            > button {
+                height: 0%;
+                opacity: 0;
+                > span {
+                    opacity: 0;
+                }
+            }
+            &:hover {
+                height: 8em;
+                background-color: #9fdfe0b7;
+                justify-content: space-around;
+                box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+                > h2 {
+                    height: 25%;
+                }
+                > button {
+                    height: 30%;
+                    border-radius: 10em;
+                    opacity: 1;
+                    padding: 0 2em;
+                    > span {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    > .div-lists {
+        border-radius: 0.5em;
+        .to-print {
+            display: none;
+        }
+    }
+}
+
+@media print {
+    @page {
+        margin: 0cm;
+    }
+    .to-print {
+        display: block;
+    }
+    #details-print {
+        height: 100%;
+        background: rgba($color: $primaryColor, $alpha: 0.08) !important;
+        margin: 0cm;
+        padding: 0cm 2cm;
+        float: none;
+        .detail-head,
+        .detail-footer {
+            background: rgba($color: $primaryColor, $alpha: 0.5) !important;
+            font-size: 20pt;
+            color: black;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 0.3cm;
+            padding: 0.5cm;
+        }
+        > h2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        table {
+            height: auto;
+            padding: 0.5cm;
+            tr {
+                background: rgba($color: $primaryColor, $alpha: 0.2) !important;
+            }
+        }
+        .detail-footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0cm;
+            padding: 1cm;
+        }
+    }
+}

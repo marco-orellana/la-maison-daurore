@@ -1,0 +1,41 @@
+@import "./base";
+.side-menu {
+	background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.6) !important;
+	ul {
+		.Mui-selected {
+			background-color: $primaryColor !important;
+			border-radius: 0.5em;
+			transition: all 0.5s;
+			color: $whiteColor;
+
+			> div {
+				svg {
+					color: $whiteColor;
+				}
+			}
+		}
+		div > span {
+			margin-right: 1em;
+			span {
+				padding: 0.5em;
+				font-size: 0.8em;
+			}
+		}
+	}
+}
+@include responsive(phone) {
+	.side-menu {
+		ul span {
+			font-size: 1.5em;
+		}
+	}
+}
+@include responsive(tablet) {
+	.side-menu {
+		ul span {
+			font-size: 1em;
+		}
+	}
+}
+@include responsive(desktop) {
+}

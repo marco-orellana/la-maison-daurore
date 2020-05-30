@@ -1,0 +1,100 @@
+@import "./base";
+
+.show-register {
+    margin-left: -100% !important;
+    .main-connexion {
+        opacity: 0;
+    }
+    .main-register {
+        display: block !important;
+    }
+}
+
+main {
+    height: 75vh;
+    overflow-y: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    > div {
+        background-color: rgba($color: $primaryColor, $alpha: 0.2);
+        border-radius: 0.5em;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s;
+        .main-container {
+            overflow: hidden;
+            width: calc(100% * 2);
+            height: 100%;
+            justify-content: space-between;
+            display: flex;
+            transition: margin-left 0.5s;
+            margin-left: 0%;
+            .main-connexion {
+                padding: 0 8%;
+                transition: all 0.5s;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                h2 {
+                    text-transform: uppercase;
+                }
+                > div {
+                    background-color: rgba($color: $primaryColor, $alpha: 0.3);
+                    background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.6);
+                    padding: 1em;
+                    border-radius: $borderRadiusMain;
+                    text-align: center;
+                    width: 100%;
+                }
+                > h1 {
+                    width: auto;
+                    padding: 0.5em;
+                    text-align: center;
+                }
+            }
+            .main-register {
+                display: none;
+                width: 50%;
+            }
+        }
+    }
+}
+@include responsive(phone) {
+    main {
+        height: 80vh;
+        > div {
+            .main-container {
+                .main-connexion {
+                    flex-direction: column;
+                    padding: 1em;
+                    > div {
+                        margin: 0em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive(tablet) {
+    main {
+        height: 78vh;
+        > div {
+            .main-container {
+                .main-connexion {
+                    padding: 0 2%;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@include responsive(desktop) {
+}

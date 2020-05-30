@@ -1,0 +1,41 @@
+{
+    "highAdmin": {
+        "allUsers": "List of all actors",
+        "validation": "Validate registrations",
+        "createAccount": "Register",
+        "classroomManagement": "Classrooms management",
+        "scheduleManagement": "Schedules",
+        "historical": "Historical",
+        "profile": "Profil",
+        "prints": "Impressions",
+        "logOut": "Sign Out"
+    },
+    "admin": {
+        "allUsers": "List of all actors",
+        "validation": "Validate registrations",
+        "createAccount": "Register",
+        "classroomManagement": "Classrooms management",
+        "profile": "Profil",
+        "logOut": "Sign Out"
+    },
+    "both": {
+        "childList": "Details of your children",
+        "childSchedule": "Schedule of your children",
+        "collabSchedule": "Consult your Schedule",
+        "registerChild": "register a child",
+        "profile": "Profile",
+        "logOut": "Sign Out"
+    },
+    "parent": {
+        "childList": "Details of your children",
+        "childSchedule": "Schedule of your children",
+        "registerChild": "register a child",
+        "profile": "Profile",
+        "logOut": "Sign Out"
+    },
+    "collaborator": {
+        "collabSchedule": "Consult your Schedule",
+        "profile": "Profile",
+        "logOut": "Sign Out"
+    }
+}

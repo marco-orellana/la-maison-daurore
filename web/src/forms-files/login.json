@@ -1,0 +1,10 @@
+{
+    "email": {
+        "type": "text",
+        "required": true
+    },
+    "password": {
+        "type": "password",
+        "required": true
+    }
+}

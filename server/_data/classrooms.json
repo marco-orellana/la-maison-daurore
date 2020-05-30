@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "5e6a3e314554933864b2c3e1",
+    "title": "classroom 1",
+    "phone": "450-111-1111",
+    "seat": 11
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3e2",
+    "title": "classroom 2",
+    "phone": "450-222-2222",
+    "seat": 22
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3e3",
+    "title": "classroom 3",
+    "phone": "450-333-3333",
+    "seat": 33
+  },
+  {
+    "_id": "5e6a3e314554933864b2c3e4",
+    "title": "classroom 4",
+    "phone": "450-444-4444",
+    "seat": 44
+  }
+]

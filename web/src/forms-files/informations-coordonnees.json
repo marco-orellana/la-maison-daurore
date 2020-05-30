@@ -1,0 +1,119 @@
+{
+    "fields": [
+        {
+            "name": "sex",
+            "required": true,
+            "type": "radioField",
+            "radioOptions": [
+                {
+                    "name": "female"
+                },
+                {
+                    "name": "male"
+                }
+            ]
+        },
+        {
+            "name": "birthday",
+            "type": "dateField",
+            "min": 18,
+            "max": 100,
+            "format": "DD MMMM YYYY",
+            "views": [
+                "year",
+                "month",
+                "date"
+            ],
+            "required": true
+        },
+        {
+            "name": "last_name",
+            "type": "textField",
+            "required": true
+        },
+        {
+            "name": "first_name",
+            "type": "textField",
+            "required": true
+        },
+        {
+            "name": "address",
+            "type": "textField",
+            "required": true
+        },
+        {
+            "name": "email",
+            "type": "textField",
+            "required": true
+        },
+        {
+            "name": "contacts",
+            "type": "multipleField",
+            "options": [
+                {
+                    "name": "contacts_personal",
+                    "type": "phoneField",
+                    "required": true
+                },
+                {
+                    "name": "contacts_home",
+                    "type": "phoneField",
+                    "required": false
+                },
+                {
+                    "name": "contacts_work",
+                    "type": "phoneField",
+                    "required": false
+                },
+                {
+                    "name": "contacts_emergency",
+                    "type": "phoneField",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "name": "is_subscribed",
+            "type": "checkboxField",
+            "required": false
+        },
+        {
+            "name": "has_child",
+            "type": "checkboxField",
+            "required": true
+        },
+        {
+            "name": "membership",
+            "required": true,
+            "type": "membershipField",
+            "radioOptions": [
+                {
+                    "name": "membership_becomeMember"
+                },
+                {
+                    "name": "membership_alreadyMember"
+                },
+                {
+                    "name": "membership_notWantMember"
+                }
+            ],
+            "options2": [
+                {
+                    "name": "membership_becomeMember_paymentMethod",
+                    "type": "textField",
+                    "required": false
+                },
+                {
+                    "name": "membership_becomeMember_memberCard",
+                    "type": "checkboxField",
+                    "required": false
+                },
+                {
+                    "name": "membership_becomeMember_discountCard",
+                    "type": "checkboxField",
+                    "required": false
+                }
+            ]
+        }
+    ]
+}

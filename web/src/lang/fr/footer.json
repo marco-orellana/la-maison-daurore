@@ -1,0 +1,14 @@
+{
+    "adresse": {
+        "head": "La maison d'aurore",
+        "title": "Adresse: ",
+        "road": "4816, rue Garnier (coin Gilford)",
+        "cp": "H2J 4B4",
+        "cityState": "Montréal, Québec",
+        "country": "CANADA"
+    },
+    "contact": {
+        "contactUs": "Nous Contacter",
+        "aboutUs": "A propos de nous"
+    }
+}

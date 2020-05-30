@@ -1,0 +1,26 @@
+{
+    "title": "IMPRESSIONS",
+    "list": {
+        "ofChild": {
+            "value": "1",
+            "label": "List of children"
+        },
+        "ofCollaborater": {
+            "value": "2",
+            "label": "List of collaborators"
+        },
+        "ofParent": {
+            "value": "3",
+            "label": "List of parents"
+        }
+    },
+    "btnPrint": "print",
+    "head": {
+        "lastName": "nom",
+        "firstName": "prénom",
+        "allergies": "allergies",
+        "school": "ecole",
+        "phone": "contact",
+        "courriel": "courriel"
+    }
+}

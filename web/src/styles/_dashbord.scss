@@ -1,0 +1,83 @@
+@import "./base";
+
+.dashbord {
+    height: 100%;
+    display: grid;
+    padding: 0.7em;
+    grid-template-columns: 3fr 11fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+        "side main"
+        "calendar main"
+        "none main";
+    transition: all 0.2s;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    position: relative;
+    > div.loading {
+        height: 100%;
+        background-color: rgba($color: #0000, $alpha: 0.5);
+        border-radius: none;
+    }
+    > div {
+        background-color: rgba($color: $primaryColor, $alpha: 0.2);
+        border-radius: $borderRadiusMain;
+        padding: 0.5em;
+        min-width: 25em;
+    }
+    .calendar {
+        padding: 0em;
+        grid-area: calendar;
+    }
+    .menu-mobile {
+        padding: 0;
+        margin: 0;
+        background: none;
+        > button {
+            margin: 0;
+            font-size: 1.2em;
+            display: none;
+        }
+    }
+    .side-menu {
+        grid-area: side;
+    }
+    .content {
+        padding: 0em;
+        background: none;
+        grid-area: main;
+    }
+}
+.MuiDrawer-paper {
+    width: 70% !important;
+    padding-top: 2em;
+    display: none;
+    background-color: $primaryColor !important;
+}
+
+@include responsive(phone) {
+    .dashbord {
+        display: flex;
+        flex-direction: column;
+        padding: 2em 0;
+        > div {
+            margin: 0.5em !important;
+        }
+        .menu-mobile {
+            > button {
+                display: flex;
+            }
+        }
+        .side-menu {
+            display: none;
+        }
+    }
+
+    .MuiDrawer-paper {
+        display: block;
+    }
+}
+@include responsive(tablet) {
+}
+@include responsive(desktop) {
+}

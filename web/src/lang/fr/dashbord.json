@@ -1,0 +1,9 @@
+{
+    "menuTitle": "MENUS",
+    "modal": {
+        "title": "Confirmation",
+        "cancel": "Annuler",
+        "confirm": "Confirmer"
+    },
+    "messageRequiredSaveChangeSnack": "Veuillez d'abord annuler ou enregistrer les modifications"
+}
